@@ -32,24 +32,24 @@
           <h2>Desenvolvedora de Software</h2>
         </div>
       </header>
-      <main>
-        <form id="my-form">
+      <main class="my-form">
+        <form>
           <fieldset>
             <div class="fieldset-wrapper">
               <legend>Entre em contato comigo</legend>
   
               <div class="input-wrapper">
-                <label for="event-title"
-                  >Título do Evento <span>(mínino 8 caracteres)</span>
+                <label for="event-name"
+                  >Nome
                 </label>
-                <input type="text" id="event-title" required minlength="8" />
+                <input type="text" id="event-name" required />
               </div>
   
               <div class="input-wrapper">
-                <label for="event-link"
-                  >Link do evento <span>(comece com https://)</span>
+                <label for="event-email"
+                  >Email
                 </label>
-                <input type="url" id="event-link" />
+                <input type="email" id="event-email" required />
               </div>
   
               <div class="input-wrapper">
@@ -58,7 +58,14 @@
                 </label>
                 <input type="number" id="event-whatsapp" />
               </div>
+              <input
+                  class="button"
+                  type="submit"
+                  form="my-form"
+                  value="Enviar"
+                />
       </main>
+
       <footer>
         <a
           href="https://github.com/BrunaBrand"
